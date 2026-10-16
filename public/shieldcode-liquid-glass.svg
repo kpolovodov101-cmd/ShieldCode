@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024" role="img" aria-labelledby="title desc">
+  <title id="title">ShieldCode — Liquid Glass Icon</title>
+  <desc id="desc">Высококачественная векторная эмблема: рубиновый щит со стеклянным контуром и сканирующим глазом на графитовом фоне.</desc>
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="40%" r="75%">
+      <stop offset="0" stop-color="#1b1b23"/>
+      <stop offset="1" stop-color="#121218"/>
+    </radialGradient>
+    <linearGradient id="tileEdge" x1=".08" y1="0" x2=".92" y2="1">
+      <stop offset="0" stop-color="#ff9caf" stop-opacity=".3"/>
+      <stop offset=".45" stop-color="#aaa5bc" stop-opacity=".12"/>
+      <stop offset="1" stop-color="#f04468" stop-opacity=".22"/>
+    </linearGradient>
+    <linearGradient id="glassRim" x1=".05" y1=".04" x2=".9" y2=".92">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset=".14" stop-color="#ffe5eb"/>
+      <stop offset=".34" stop-color="#ff355d"/>
+      <stop offset=".63" stop-color="#ef1749"/>
+      <stop offset=".82" stop-color="#ff7b96"/>
+      <stop offset="1" stop-color="#fff"/>
+    </linearGradient>
+    <linearGradient id="rimGlint" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fff" stop-opacity=".98"/>
+      <stop offset=".48" stop-color="#ffe5ec" stop-opacity=".72"/>
+      <stop offset="1" stop-color="#fff" stop-opacity=".08"/>
+    </linearGradient>
+    <linearGradient id="shieldGlass" x1=".05" y1="0" x2=".88" y2="1">
+      <stop offset="0" stop-color="#fff" stop-opacity=".11"/>
+      <stop offset=".26" stop-color="#f5eaf0" stop-opacity=".035"/>
+      <stop offset=".68" stop-color="#ee244f" stop-opacity=".1"/>
+      <stop offset="1" stop-color="#191820" stop-opacity=".48"/>
+    </linearGradient>
+    <radialGradient id="eyeOrb" cx=".31" cy=".22" r=".84">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset=".12" stop-color="#ffd6df"/>
+      <stop offset=".28" stop-color="#ff6681"/>
+      <stop offset=".5" stop-color="#f51c4d"/>
+      <stop offset=".78" stop-color="#bb0d37"/>
+      <stop offset="1" stop-color="#6e0925"/>
+    </radialGradient>
+    <linearGradient id="eyeRim" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset=".47" stop-color="#fff1f4"/>
+      <stop offset="1" stop-color="#e8b8c4"/>
+    </linearGradient>
+    <radialGradient id="rubyAura">
+      <stop offset="0" stop-color="#ff174c" stop-opacity=".36"/>
+      <stop offset="1" stop-color="#ff174c" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="tileShadow" x="-25%" y="-25%" width="150%" height="160%">
+      <feDropShadow dx="0" dy="22" stdDeviation="25" flood-color="#000" flood-opacity=".4"/>
+    </filter>
+    <filter id="rimGlow" x="-50%" y="-40%" width="200%" height="190%">
+      <feGaussianBlur stdDeviation="10" result="blur"/>
+      <feColorMatrix in="blur" type="matrix" values="1 0 0 0 .15  0 .22 0 0 .01  0 0 .36 0 .04  0 0 0 .62 0" result="tint"/>
+      <feMerge><feMergeNode in="tint"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="orbGlow" x="-90%" y="-90%" width="280%" height="280%">
+      <feGaussianBlur stdDeviation="13" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <clipPath id="tileClip"><rect x="88" y="88" width="848" height="848" rx="190"/></clipPath>
+    <clipPath id="shieldClip"><path d="M512 213 C575 247 649 272 720 294 L720 498 C720 649 636 757 512 824 C388 757 304 649 304 498 L304 294 C375 272 449 247 512 213Z"/></clipPath>
+  </defs>
+
+  <!-- Rounded graphite app tile -->
+  <g filter="url(#tileShadow)">
+    <rect x="88" y="88" width="848" height="848" rx="190" fill="url(#bg)" stroke="url(#tileEdge)" stroke-width="8"/>
+    <rect x="101" y="101" width="822" height="822" rx="177" fill="none" stroke="#fff" stroke-opacity=".035" stroke-width="2"/>
+  </g>
+  <g clip-path="url(#tileClip)" opacity=".5">
+    <ellipse cx="512" cy="334" rx="380" ry="340" fill="url(#rubyAura)"/>
+    <path d="M75 760 C286 690 690 690 949 760" fill="none" stroke="#fff" stroke-opacity=".025" stroke-width="2"/>
+  </g>
+
+  <!-- Glass shield shell -->
+  <path d="M512 213 C575 247 649 272 720 294 L720 498 C720 649 636 757 512 824 C388 757 304 649 304 498 L304 294 C375 272 449 247 512 213Z"
+        fill="none" stroke="#f42150" stroke-opacity=".28" stroke-width="38" stroke-linejoin="round" filter="url(#rimGlow)"/>
+  <path d="M512 213 C575 247 649 272 720 294 L720 498 C720 649 636 757 512 824 C388 757 304 649 304 498 L304 294 C375 272 449 247 512 213Z"
+        fill="#15151c" fill-opacity=".88" stroke="url(#glassRim)" stroke-width="20" stroke-linejoin="round"/>
+  <path d="M512 239 C571 270 636 292 695 311 L695 497 C695 632 622 728 512 790 C402 728 329 632 329 497 L329 311 C388 292 453 270 512 239Z"
+        fill="url(#shieldGlass)" stroke="url(#rimGlint)" stroke-opacity=".82" stroke-width="4" stroke-linejoin="round"/>
+
+  <!-- Reflections inside the glass, kept broad and subtle -->
+  <g clip-path="url(#shieldClip)">
+    <path d="M307 328 C404 265 531 242 660 283 C568 281 440 325 340 410Z" fill="#fff" opacity=".075"/>
+    <path d="M315 602 C425 651 580 661 712 595 L712 656 C584 750 430 723 337 678Z" fill="#ed1a49" opacity=".065"/>
+    <path d="M333 315 C372 301 404 288 438 275" fill="none" stroke="#fff" stroke-width="8" stroke-linecap="round" opacity=".82"/>
+    <path d="M347 303 C369 294 386 288 403 282" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" opacity=".9"/>
+    <path d="M690 361 L690 443" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round" opacity=".45"/>
+    <path d="M338 535 C347 633 412 705 475 748" fill="none" stroke="#dff8ff" stroke-width="4" stroke-linecap="round" opacity=".48"/>
+  </g>
+
+  <!-- One recognizable ruby edge highlight -->
+  <path d="M637 269 C664 279 692 288 720 297 L720 405" fill="none" stroke="#ff5271" stroke-width="5" stroke-linecap="round" opacity=".95"/>
+  <path d="M639 265 C668 275 693 284 716 292" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" opacity=".9"/>
+
+  <!-- Glass eye and dimensional ruby iris -->
+  <path d="M352 506 C399 462 455 434 512 434 C569 434 625 462 672 506 C625 550 569 578 512 578 C455 578 399 550 352 506Z"
+        fill="#101016" fill-opacity=".68" stroke="#8d8992" stroke-opacity=".45" stroke-width="21" stroke-linejoin="round"/>
+  <path d="M352 506 C399 462 455 434 512 434 C569 434 625 462 672 506 C625 550 569 578 512 578 C455 578 399 550 352 506Z"
+        fill="#fff" fill-opacity=".075" stroke="url(#eyeRim)" stroke-width="12" stroke-linejoin="round"/>
+  <path d="M369 506 C412 469 462 447 512 447 C562 447 612 469 655 506 C612 543 562 565 512 565 C462 565 412 543 369 506Z"
+        fill="none" stroke="#fff" stroke-opacity=".36" stroke-width="3" stroke-linejoin="round"/>
+  <circle cx="512" cy="506" r="90" fill="url(#rubyAura)"/>
+  <circle cx="512" cy="506" r="69" fill="#260f19" stroke="#ff849b" stroke-opacity=".76" stroke-width="4"/>
+  <circle cx="512" cy="506" r="59" fill="url(#eyeOrb)" stroke="#fff" stroke-opacity=".86" stroke-width="3" filter="url(#orbGlow)"/>
+  <circle cx="512" cy="506" r="26" fill="#fdfcff"/>
+  <circle cx="512" cy="506" r="15" fill="#fff"/>
+  <ellipse cx="490" cy="480" rx="17" ry="8" transform="rotate(-34 490 480)" fill="#fff" opacity=".86"/>
+  <circle cx="539" cy="531" r="5" fill="#ffdce4" opacity=".88"/>
+
+  <!-- Tiny glass catches; restrained, symmetrical -->
+  <circle cx="314" cy="301" r="5" fill="#fff" opacity=".9"/>
+  <circle cx="708" cy="306" r="4" fill="#fff" opacity=".86"/>
+</svg>
